@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyboard Layout</title>
+  <style>
+    #keyboard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .row {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .key {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .key:hover {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <h1><CENTER>KEYBOARD KEYS LAYOUT</CENTER></h1>
+  <div id="keyboard">
+    <div class="row">
+      <div class="key" data-value="q">Q</div>
+      <div class="key" data-value="w">W</div>
+      <div class="key" data-value="e">E</div>
+      <div class="key" data-value="r">R</div>
+      <div class="key" data-value="t">T</div>
+      <div class="key" data-value="y">Y</div>
+      <div class="key" data-value="u">U</div>
+      <div class="key" data-value="i">I</div>
+      <div class="key" data-value="o">O</div>
+      <div class="key" data-value="p">P</div>
+    </div>
+    <div class="row">
+      <div class="key" data-value="a">A</div>
+      <div class="key" data-value="s">S</div>
+      <div class="key" data-value="d">D</div>
+      <div class="key" data-value="f">F</div>
+      <div class="key" data-value="g">G</div>
+      <div class="key" data-value="h">H</div>
+      <div class="key" data-value="j">J</div>
+      <div class="key" data-value="k">K</div>
+      <div class="key" data-value="l">L</div>
+    </div>
+    <div class="row">
+      <div class="key" data-value="z">Z</div>
+      <div class="key" data-value="x">X</div>
+      <div class="key" data-value="c">C</div>
+      <div class="key" data-value="v">V</div>
+      <div class="key" data-value="b">B</div>
+      <div class="key" data-value="n">N</div>
+      <div class="key" data-value="m">M</div>
+    </div>
+  </div>
+
+  <script>
+    
+    const keyboard = document.getElementById("keyboard");
+
+    
+    keyboard.addEventListener("click", function(event) {
+    
+      const key = event.target.closest(".key");
+      if (!key) return;
+
+      
+      const value = key.dataset.value;
+
+     
+      console.log(value);
+    });
+  </script>
+</body>
+</html>
