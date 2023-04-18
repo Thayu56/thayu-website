@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Task4.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+        <div class="container">
+            <h1 class="text-center">CONTACT</h1>
+            <hr width="70px">
+            <p style="text-align:justify;">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui</p>
+            <p style="text-align: center;">Impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+            <div class="row width-50 hidin">
+                <div class="col-md-6" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <i class="fa-solid fa- 4x fa-location-dot" style="width: 100px;"></i>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider  This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <i class="fa-regular fa-4 fa-envelope" style="width: 100px;"></i>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Titional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <i class="fa-light fa-4 fa-mobile"  style="width: 100px;"></i>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">content is a little bit longer.</p>
+                          </div>
+                          <div class="col-md-4">
+                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.23106923234!2d79.87933693948654!3d13.04798594143626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2z4K6a4K-G4K6p4K-N4K6p4K-ILCDgrqTgrq7grr_grrTgr40g4K6o4K6-4K6f4K-B!5e0!3m2!1sta!2sin!4v1681300659158!5m2!1sta!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                <div class="col-md-6" >
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="input1">From:</label>
+                                    <input type="text" id="fname" class=" ">
+                                </div>
+                                 <div class="col-md-3">
+                                    <label for="input1">Email:</label>
+                                    <input type="text" id="fname" class=" ">
+                                 </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject">
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                   <textarea name="address" id="address" cols="15" rows="5"></textarea>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+    
+            </div>
+
+        </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+          <title>
+            Fitness
+          </title>
+     
+          <style>
+            body{
+                margin:0;
+                padding: 0;
+                background-color: black;
+                box-sizing: border-box;
+               
+            }
+           
+            .firstsec{
+                background-image: url("gymbacks.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+               
+     
+            }
+            .n{
+                margin-left: 2%;
+                margin-top: 3%;
+                box-sizing: border-box;
+            }
+            .name{
+                color:yellow;
+                font-size: 100px;
+                font-weight:900;
+                font-family: 'Segoe UI';
+                letter-spacing: -0.5px;
+                
+            
+            }
+            .nname{
+                color:black;
+                font-size: 80px;
+                font-weight: 600;
+                text-align: center;
+                border: 3px black;
+                background-color: white;
+                width: 200px;
+                font-family: Tahoma;
+                border-radius: 5%;
+
+            }
+            .logo img{
+                width: 15%;
+                height: 20%;
+                border-radius: 8%;
+            }
+            ul{
+                list-style-type:none;
+                float: right;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                margin: 10px 0px;
+
+            }
+            li{
+                display: inline;
+                
+            }
+           
+             li a{
+                text-decoration: none;
+              padding: 20px 30px;
+             
+                font-size: 25px;
+                color: white;
+                
+            }
+             li a:hover {
+                text-decoration:underline yellow 6px;
+               
+            }
+            .active{
+                color: red;
+            }
+            .active:hover{
+                text-decoration: underline white 6px;
+            }
+            p{
+                color: yellow;
+                font-family: 'Segoe UI';
+                 font-size: 70px;
+                 margin-top: 6px;
+                 margin-left: 2%;
+
+            }
+            #slogan{
+                margin-left: 5%;
+                font-size: 30px;
+                margin-bottom: 0%;        
+                padding: 0px 0px 35px 10px;
+            }
+            #Workout{
+                 background-image:url("signback.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0%;
+                padding: 0;
+               
+               
+            }
+            .exe{
+                color: yellow;
+                 text-align: center;
+                font-family: 'Segoe UI';
+                 font-size: 70px;
+                 margin-top: 6px;
+                 margin-left: 2%;
+                 
+                
+                 
+            }
+            .container{
+                max-width: 1200px;
+                overflow: auto;
+                margin-left: 5%;
+            }
+            .gif{
+                margin:4%;
+                border: 1px solid gray;
+                float:left;
+                width: 25%;
+                border-radius: 10%;
+                
+            }
+             .gif img{
+                
+               border-radius: 5%;
+                width: 100%;
+                height: auto;
+                
+            }
+            .desc{
+                color: yellow;
+                padding: 15px;
+                text-align: center;
+            }
+            .gif img:hover{
+                cursor: grab;
+                opacity: 0.6;
+            }
+            .gif:hover{
+                border-color:  yellow;
+                
+            }
+            .moreex a{
+                float: right;
+                color: red;
+                text-decoration: none;
+                margin-right: 2%;
+
+            }
+            #sign{
+                background-image:url("signback.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 2%;
+                padding: 0;
+               
+            }
+            .exe2{
+                color: yellow;
+                 text-align: center;
+                font-family: 'Segoe UI';
+                 font-size: 70px;
+                 margin-top: 6px;
+                 margin-left: 2%;
+                 border-bottom: solid 1px white;
+            }
+            form{
+                margin-top: 3%;
+                text-align: center;
+                color: yellow;
+                box-sizing: border-box;
+            }
+            .contain{
+                width:100%;
+                max-width: 650px;
+                background:rgba(0, 0, 0,0.3);
+                margin-left: 25%;
+                padding: 28px;
+                border-radius: 10px;
+                box-shadow: inset -2px 2px 2px white;
+                font-family: sans-serif;
+            }
+            .inlab input{
+                border: 1px solid white;
+                border-radius: 5px;
+            }
+            #submit{
+                background-color: red;
+                cursor: grab;
+                height: 5%;
+                width: 50%;
+                border: 3px solid grey;
+                border-radius: 10px;
+            }
+            #Contact{
+                background-image: linear-gradient(to right,black,grey,black);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: center;
+            }
+            .lastcon{
+                color: yellow;
+                margin-left: 30%;
+            }
+            .main{
+        margin-left: 50px;
+        
+
+      }
+      .main h4{
+        margin-top: 5%;
+      }
+      .main h3{
+        margin-bottom: 3%;
+      }
+
+       
+      .icon{
+        float: left;
+        align-items: center;
+      }
+            
+        
+          </style>
+          
+    </head>
+    <body>
+        <div class="firstsec">
+               <div class="nav">
+                  <ul>
+                      <li><a  href="#home">Home</a></li>
+                      <li><a href="#Workout">WorkOut</a></li>
+                       <li><a href="#Contact">Contact</a></li>
+                       <li><a class="active" href="#Sign">Sign in</a></li>
+                   </ul>
+               </div>
+               <div class="logo">
+                     <img src="logos.png">
+                </div>
+               <div id="home">
+
+                       <div class="n">
+                              <div class="name">
+                                    POWER ZONE
+                             </div>
+                               <div class="nname">
+                                         GYM
+                                </div>
+                        </div>
+                                    <p><span style="color: white;" >Feel</span> <span style="text-shadow: red 2px 2px;">The Power</span></p>
+                                       <p id="slogan"><span style="color: white;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Build a strong character.<br>
+                                                    Great for your body.<br>
+                                               Sweating it out in the gym.<br>
+                                           The healthy way of life company.</span></p>
+                 </div>
+         </div>
+     <div id="Workout">
+          <p class="exe">Workouts</p>
+          <div class="container">
+             <div class="gif">
+                <img src="pull-up.gif">
+                <div class="desc">PULL UP</div>
+             </div>
+             <div class="gif">
+                <img src="push-press.gif">
+                <div class="desc">PUSH-PRESS</div>
+             </div>
+             <div class="gif">
+                <img src="kettlebell-clean-and-jerk-movement.gif">
+                <div class="desc">KETTLEBELL-CLEAN-JERK</div>
+             </div>
+             <div class="gif">
+                <img src="leg-press.gif">
+                <div class="desc">LEG-PRESS</div>
+             </div>
+             <div class="gif">
+                <img src="barbell-curl.gif">
+                <div class="desc">BARBELL-CURL</div>
+             </div>
+             <div class="gif">
+                <img src="tuck-crunch.gif">
+                <div class="desc">TUCK-CRUNCH</div>
+             </div>
+             <div class="moreex">
+             <a href="#Contact">*If You Need More Workout Visit Directly (contact)...*</a>
+             </div>
+          </div>
+                
+        </div>
+      </div>
+    <div id="Sign">
+        <div class="contain">
+             <div class="exe2">SIGN IN</div>
+           <form>
+            <div class="inlab">
+            <label for="Name" >NAME</label>
+            <input type="text"id="Name" required><br><br>
+            <label for="Age">Age</label>
+            <input type="number" id="Age" required><br><br>
+            <label for="Gender">Gender</label>
+            <input type="radio" name="gender" id="Gender" value="Male" required>Male
+            <input type="radio" name="gender" id="Gender"value="Female"required>Female<br><br>
+            <label for="Address">Address</label>
+            <input type="text" id="Address"><br><br>
+            <label for="phno">Phone Number</label>
+            <input type="number"id="phno" required><br><br>
+            <label for="Weight">Weight</label>
+            <input type="number"id="Weight" placeholder="Weight in kgs"><br><br>
+            <label for="Height">Height</label>
+            <input type="number" id="Height" placeholder="Height in cm"><br><br>
+            <input type="submit" id="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+    </div> 
+   <div id="Contact">
+      <center>
+       <div class="exe2"> Contact Us</div>
+    </center>
+       <div class="lastcon">
+        <div class="third">
+          <div class="icon"><i class='fas fa-map-marker' style='font-size:36px'></i></div>
+              <div class="main"> <h4 style="font-size:30px;">Location:</h4>
+              <div style="margin-left: 65px;"><h3>W59P+7C7, United Colony, Ranganathapuram, Medavakkam</h3></div></div>
+              <div class="icon"><i class='fas fa-envelope-open' style='font-size:36px'></i></div>
+              <div class="main"> <h4 style="font-size:30px;">Email:</h4>
+              <div style="margin-left: 65px;"><h3>fitnessgroup@gmail.com</h3></div></div>
+              <div class="icon"><i class='fas fa-phone' style='font-size:36px'></i></div>
+              <div class="main"> <h4 style="font-size:30px;">Cell:</h4>
+              <div style="margin-left: 65px;"><h3>+91 9856471254</h3></div></div>
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.837392537254!2d80.18217414456475!3d12.9181706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f84d50ce5ab%3A0xdb04b5d589ac565b!2sDiamond%20Gym%20new%20place!5e0!3m2!1sen!2sin!4v1681799095059!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>      
+
+
+   
+
+   </div> 
+
+     
+   </body>
+</html>
