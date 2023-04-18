@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		.calculator {
+			width: 200px;
+			height: 300px;
+			margin: 0 auto;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 5px;
+			padding: 5px;
+		}
+
+		.screen {
+			grid-column: 1 / span 4;
+			background-color: #f1f1f1;
+			text-align: right;
+			padding: 5px;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			font-size: 20px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			font-size: 18px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+    <center>
+        <h1 style="color: #4CAF50;">CALCULATOR</h1>
+    </center>
+	<div class="calculator">
+		<div class="screen" id="screen"></div>
+		<button onclick="clearScreen()">C</button>
+		<button onclick="backspace()"><</button>
+		<button onclick="operate('%')">%</button>
+		<button onclick="operate('/')">/</button>
+		<button onclick="updateScreen('7')">7</button>
+		<button onclick="updateScreen('8')">8</button>
+		<button onclick="updateScreen('9')">9</button>
+		<button onclick="operate('*')">*</button>
+		<button onclick="updateScreen('4')">4</button>
+		<button onclick="updateScreen('5')">5</button>
+		<button onclick="updateScreen('6')">6</button>
+		<button onclick="operate('-')">-</button>
+		<button onclick="updateScreen('1')">1</button>
+		<button onclick="updateScreen('2')">2</button>
+		<button onclick="updateScreen('3')">3</button>
+		<button onclick="operate('+')">+</button>
+		<button onclick="updateScreen('0')">0</button>
+		<button onclick="updateScreen('.')">.</button>
+		<button onclick="calculate()">=</button>
+	</div>
+	<script>
+		let screen = document.getElementById('screen');
+		let result = '';
+
+		function updateScreen(value) {
+			screen.innerText += value;
+			result += value;
+		}
+
+		function clearScreen() {
+			screen.innerText = '';
+			result = '';
+		}
+
+		function backspace() {
+			screen.innerText = screen.innerText.slice(0, -1);
+			result = result.slice(0, -1);
+		}
+
+		function operate(operator) {
+			if (result.slice(-1) === operator) {
+				return;
+			}
+			screen.innerText += operator;
+			result += operator;
+		}
+
+		function calculate() {
+			let calculation = eval(result);
+			screen.innerText = calculation;
+			result = calculation.toString();
+		}
+	</script>
+</body>
+</html>
